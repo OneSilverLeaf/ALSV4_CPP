@@ -25,7 +25,7 @@ class ALSV4_CPP_API UALSAnimNotifyCameraShake : public UAnimNotify
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AnimNotify)
-	TSubclassOf<UCameraShake> ShakeClass;
+	TSubclassOf<UMatineeCameraShake> ShakeClass; //Changed to UMatineeCameraShake from UCameraShake as the older one is supposedly deprecated in 4.25.4
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = AnimNotify)
 	float Scale = 1.0f;
